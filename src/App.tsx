@@ -1,4 +1,4 @@
-import { GitHubBanner, Refine } from "@refinedev/core";
+import { Refine } from "@refinedev/core";
 import { RefineKbarProvider } from "@refinedev/kbar";
 import {
     notificationProvider,
@@ -27,10 +27,9 @@ const API_URL = "https://api.fake-rest.refine.dev";
 const App: React.FC = () => {
     return (
         <BrowserRouter>
-            <GitHubBanner />
 
             <RefineKbarProvider>
-                <ConfigProvider theme={RefineThemes.Blue}>
+                <ConfigProvider theme={RefineThemes.Green}>
                     <Refine
                         routerProvider={routerProvider}
                         dataProvider={dataProvider(API_URL)}
